@@ -1,0 +1,25 @@
+<div class="container">
+  <mat-card class="card-container">
+    <mat-card-title>Welcome to OnShop</mat-card-title>
+    <mat-card-content>
+      <mat-form-field class="form-container">
+        <input
+          matInput
+          placeholder="Enter Your Username"
+          [formControl]="userNameForm"
+        />
+      </mat-form-field>
+      <mat-form-field class="form-container">
+        <input
+          type="password"
+          matInput
+          placeholder="Enter Your Password"
+          [formControl]="passwordForm"
+        />
+      </mat-form-field>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button (click)="login()">Submit</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
